@@ -1,0 +1,42 @@
+2021-05-09 00:37:44.716  INFO 3587 --- [main] com.example.demo.ECommerceApplication    : Starting ECommerceApplication on rahuls-MacBook-Air.local with PID 3587 (started by rahulxyz in /Users/rahulxyz/Documents/Work/Spring boot/nd035-c4-Security-and-DevOps/starter_code)
+2021-05-09 00:37:44.724  INFO 3587 --- [main] com.example.demo.ECommerceApplication    : No active profile set, falling back to default profiles: default
+2021-05-09 00:37:46.572  INFO 3587 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-05-09 00:37:46.796  INFO 3587 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 188ms. Found 4 repository interfaces.
+2021-05-09 00:37:47.646  INFO 3587 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b71b7d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-09 00:37:47.744  INFO 3587 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$4fc94583] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-09 00:37:47.756  INFO 3587 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-09 00:37:47.760  INFO 3587 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@336365bc' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-09 00:37:47.762  INFO 3587 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$749de835] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-09 00:37:47.771  INFO 3587 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-09 00:37:48.185  INFO 3587 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-09 00:37:48.221  INFO 3587 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-09 00:37:48.222  INFO 3587 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-05-09 00:37:48.411  INFO 3587 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-09 00:37:48.413  INFO 3587 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3452 ms
+2021-05-09 00:37:48.680  INFO 3587 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-09 00:37:48.914  INFO 3587 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-09 00:37:48.991  INFO 3587 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-05-09 00:37:49.090  INFO 3587 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-05-09 00:37:49.092  INFO 3587 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-05-09 00:37:49.315  INFO 3587 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-05-09 00:37:49.500  INFO 3587 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-09 00:37:50.603  INFO 3587 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-09 00:37:51.736  INFO 3587 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3980b44f, org.springframework.security.web.context.SecurityContextPersistenceFilter@44ae6b66, org.springframework.security.web.header.HeaderWriterFilter@39f8adc0, org.springframework.web.filter.CorsFilter@237aba92, org.springframework.security.web.authentication.logout.LogoutFilter@62a81453, com.example.demo.security.JWTAuthenticationFilter@65b19e5c, com.example.demo.security.JWTAuthenticationVerficationFilter@6978a32a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58b5d5fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f3aa970, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55665086, org.springframework.security.web.session.SessionManagementFilter@1c23e369, org.springframework.security.web.access.ExceptionTranslationFilter@1a914a00, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d67b2b3]
+2021-05-09 00:37:52.128  INFO 3587 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-09 00:37:52.192  WARN 3587 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-09 00:37:52.548  INFO 3587 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-09 00:37:52.551  INFO 3587 --- [main] com.example.demo.ECommerceApplication    : Started ECommerceApplication in 8.807 seconds (JVM running for 9.758)
+2021-05-09 00:38:06.725  INFO 3587 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-09 00:38:06.726  INFO 3587 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-09 00:38:06.742  INFO 3587 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2021-05-09 00:38:07.203  INFO 3587 --- [http-nio-8080-exec-2] c.e.demo.controllers.UserController      : User created successfully: 
+2021-05-09 00:38:10.858  INFO 3587 --- [http-nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-05-09 00:38:49.256  INFO 3587 --- [http-nio-8080-exec-6] c.e.demo.controllers.CartController      : Item added to cart successfully
+2021-05-09 00:38:56.213  INFO 3587 --- [http-nio-8080-exec-7] c.e.demo.controllers.CartController      : Item added to cart successfully
+2021-05-09 00:39:07.389  INFO 3587 --- [http-nio-8080-exec-8] c.e.demo.controllers.OrderController     : Order placed successfully
+2021-05-09 00:39:13.271  INFO 3587 --- [http-nio-8080-exec-9] c.e.demo.controllers.OrderController     : getOrdersForUser
+2021-05-09 00:39:23.408  INFO 3587 --- [http-nio-8080-exec-10] c.e.demo.controllers.ItemController      : getItems: 
+2021-05-09 00:39:26.737  INFO 3587 --- [http-nio-8080-exec-1] c.e.demo.controllers.ItemController      : getItemById: Optional[com.example.demo.model.persistence.Item@20]
+2021-05-09 00:39:29.430  INFO 3587 --- [http-nio-8080-exec-2] c.e.demo.controllers.ItemController      : getItemsByName: 

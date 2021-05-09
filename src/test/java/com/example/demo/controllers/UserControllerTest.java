@@ -25,12 +25,18 @@ public class UserControllerTest {
 
     private BCryptPasswordEncoder encoder = mock(BCryptPasswordEncoder.class);
 
+    private User user;
+
     @Before
     public void setUp() {
         userController = new UserController();
         TestUtils.injectObjects(userController, "userRepository", userRepo);
         TestUtils.injectObjects(userController, "cartRepository", cartRepo);
         TestUtils.injectObjects(userController, "bCryptPasswordEncoder", encoder);
+
+        user = new User();
+        user.setId(0);
+        when(userRepo.findById(0L)).thenReturn(java.util.Optional.ofNullable(user));
     }
 
     @Test
@@ -49,5 +55,24 @@ public class UserControllerTest {
         assertEquals(0,body.getId());
         assertEquals("Rahul",body.getUsername());
         assertEquals("thisIsHashed",body.getPassword());
+    }
+
+    @Test
+    public void verify_findById() {
+        ResponseEntity<User> userResponseEntity = userController.findById(0L);
+        assertEquals(0, userResponseEntity.getBody().getId());
+        userResponseEntity = userController.findById(1L);
+        assertEquals(404,userResponseEntity.getStatusCodeValue());
+    }
+
+    @Test
+    public void verify_password_validation() {
+        CreateUserRequest userRequest = new CreateUserRequest();
+        userRequest.setUsername("Rahul");
+        userRequest.setPassword("rahul");
+        userRequest.setConfirmPassword("rahul");
+        ResponseEntity<User> userResponseEntity = userController.createUser(userRequest);
+        assertEquals(400, userResponseEntity.getStatusCodeValue());
+
     }
 }
